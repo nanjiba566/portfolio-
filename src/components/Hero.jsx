@@ -22,13 +22,13 @@ function MarqueeGroup({ prefix }) {
 
 export default function Hero() {
   return (
-    <section id="home" className="shade-a scroll-mt-24 relative min-h-screen flex items-center pt-32 pb-16 sm:pt-36 lg:pt-40 overflow-hidden w-full">
+    <section id="home" className="shade-a scroll-mt-24 relative min-h-screen flex items-center pt-28 pb-16 sm:pt-32 lg:pt-36 overflow-hidden w-full">
       <div className="orb w-[420px] h-[420px] -top-28 -left-36" style={{ background: 'rgba(46,74,125,.1)' }} />
       <div className="orb w-72 h-72 bottom-0 -right-20" style={{ background: 'rgba(59,93,150,.07)', animationDelay: '3.5s' }} />
 
       <div className="max-w-5xl mx-auto px-5 w-full grid md:grid-cols-2 gap-10 md:gap-12 items-center">
 
-        <div className="space-y-6 text-center md:text-left">
+        <div className="min-w-0 w-full max-w-full space-y-6 text-center md:text-left">
           <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full text-xs font-semibold bg-[rgba(46,74,125,.08)] border border-[rgba(46,74,125,.18)] text-navy-600 dark:text-navy-300 dark:bg-[rgba(137,168,216,.1)] dark:border-[rgba(137,168,216,.2)]">
             <span className="w-1.5 h-1.5 rounded-full bg-navy-600 dark:bg-navy-300 animate-pulse" />
             Available for opportunities
@@ -39,7 +39,7 @@ export default function Hero() {
             <span className="navy-grad-text">Rifa Nanjiba</span>
           </h1>
 
-          <div className="marquee-wrapper my-5">
+          <div className="marquee-wrapper w-full max-w-full overflow-hidden my-5">
             <div className="marquee-track">
               <MarqueeGroup prefix="a" />
               <MarqueeGroup prefix="b" />
@@ -64,8 +64,8 @@ export default function Hero() {
           </div>
         </div>
 
-        <div className="flex justify-center md:justify-end w-full">
-          <div className="relative animate-float w-64 h-64 sm:w-72 sm:h-72 lg:w-80 lg:h-80 mx-auto md:mx-0 mt-8 md:mt-0">
+        <div className="min-w-0 w-full max-w-full flex justify-center md:justify-end">
+          <div className="relative animate-float w-60 h-60 sm:w-72 sm:h-72 lg:w-80 lg:h-80 mx-auto md:mx-0 mt-8 md:mt-0 block">
             <div
               className="absolute inset-0 rounded-3xl rotate-6 opacity-25 blur-sm scale-105 -z-10 pointer-events-none"
               style={{ background: 'linear-gradient(135deg,#2e4a7d,#3b5d96)' }}
@@ -74,7 +74,7 @@ export default function Hero() {
               className="absolute rounded-3xl pointer-events-none -z-10"
               style={{ inset: '-8px', transform: 'rotate(-3deg)', border: '2px solid rgba(46,74,125,.22)' }}
             />
-            <div className="w-full h-full rounded-3xl profile-glow overflow-hidden border-2 dark:border-white/10 border-black/8 relative bg-slate-100 dark:bg-slate-800">
+            <div className="w-full h-full rounded-3xl profile-glow overflow-hidden border-2 dark:border-white/10 border-black/8 relative bg-slate-100 dark:bg-slate-800 block">
               <img
                 src={profileImg}
                 onError={(e) => { e.currentTarget.src = '/profile.png' }}
