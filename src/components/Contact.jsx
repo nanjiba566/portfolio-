@@ -88,7 +88,7 @@ export default function Contact() {
 
         <div className="text-center mb-10 fade-in">
           <p className="text-navy-600 dark:text-navy-300 text-sm font-bold uppercase tracking-widest mb-3">Let's Connect</p>
-          <h2 className="text-4xl sm:text-5xl font-extrabold dark:text-white text-slate-900">
+          <h2 className="text-3xl sm:text-4xl md:text-5xl font-extrabold dark:text-white text-slate-900">
             Send me a <span className="navy-grad-text">message</span>
           </h2>
           <span className="mt-4 block w-12 h-1 navy-grad-bg rounded-full mx-auto" />
@@ -176,7 +176,7 @@ export default function Contact() {
             </div>
           </div>
 
-          <div className="bg-white/95 dark:bg-slate-900/90 rounded-3xl border dark:border-white/8 border-black/7 shadow-sm shadow-slate-200/60 dark:shadow-none p-7 sm:p-8">
+          <div className="bg-white/95 dark:bg-slate-900/90 rounded-3xl border dark:border-white/8 border-black/7 shadow-sm shadow-slate-200/60 dark:shadow-none p-6 sm:p-8">
             <form onSubmit={sendMsg} className="space-y-4">
               <div>
                 <label className="block text-xs font-semibold dark:text-slate-400 text-slate-600 mb-1.5">Your Name</label>

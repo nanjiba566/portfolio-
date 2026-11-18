@@ -4,8 +4,16 @@
 @tailwind components;
 @tailwind utilities;
 
-/* ─── Smooth scroll ─── */
-html { scroll-behavior: smooth; }
+/* ─── Smooth scroll & prevent horizontal overflow ─── */
+html {
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+  width: 100%;
+}
+body {
+  overflow-x: hidden;
+  width: 100%;
+}
 
 /* ─── Marquee (defined here so Vite/Tailwind purge never removes it) ─── */
 @keyframes marqueeScroll {
@@ -191,7 +199,6 @@ html { scroll-behavior: smooth; }
 
 /* ─── Mobile timeline adjustments ─── */
 @media (max-width: 767px) {
-  .tl-line  { left: 18px !important; }
   .tl-left,
-  .tl-right { padding-left: 44px !important; padding-right: 0 !important; }
+  .tl-right { padding-left: 0 !important; padding-right: 0 !important; }
 }

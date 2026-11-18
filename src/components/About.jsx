@@ -5,7 +5,7 @@ export default function About() {
 
         <div className="text-center mb-10 fade-in">
           <p className="text-navy-600 dark:text-navy-300 text-sm font-bold uppercase tracking-widest mb-3">About Me</p>
-          <h2 className="text-4xl sm:text-5xl font-extrabold dark:text-white text-slate-900">
+          <h2 className="text-3xl sm:text-4xl md:text-5xl font-extrabold dark:text-white text-slate-900">
             Who I <span className="navy-grad-text">Am</span>
           </h2>
           <span className="mt-4 block w-12 h-1 navy-grad-bg rounded-full mx-auto" />
@@ -13,7 +13,7 @@ export default function About() {
 
         <div className="card-hover bg-white/95 dark:bg-slate-900/90 rounded-3xl border dark:border-white/8 border-black/7 shadow-sm shadow-slate-200/70 dark:shadow-none overflow-hidden fade-in">
 
-          <div className="p-7 sm:p-9">
+          <div className="p-6 sm:p-8 md:p-9">
             <div className="space-y-4 text-sm sm:text-[15px] dark:text-slate-400 text-slate-600 leading-relaxed max-w-2xl">
               <p>
                 Hi! I'm{' '}

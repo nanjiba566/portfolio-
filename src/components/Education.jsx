@@ -27,7 +27,7 @@ export default function Education() {
 
         <div className="text-center mb-12 fade-in">
           <p className="text-navy-600 dark:text-navy-300 text-sm font-bold uppercase tracking-widest mb-3">Academic Path</p>
-          <h2 className="text-4xl sm:text-5xl font-extrabold dark:text-white text-slate-900">
+          <h2 className="text-3xl sm:text-4xl md:text-5xl font-extrabold dark:text-white text-slate-900">
             Education <span className="navy-grad-text">Journey</span>
           </h2>
           <span className="mt-4 block w-12 h-1 navy-grad-bg rounded-full mx-auto" />
@@ -49,9 +49,9 @@ export default function Education() {
               >
                 <div className="w-4 h-4 rounded-full tl-dot navy-grad-bg border-2 border-[#edf2f9] dark:border-[#0b1120]" />
               </div>
-              <div className="tl-left card-hover bg-white/95 dark:bg-slate-900/90 rounded-3xl border dark:border-white/8 border-black/7 shadow-sm shadow-slate-200/60 dark:shadow-none p-8 sm:p-9">
+              <div className="tl-left card-hover bg-white/95 dark:bg-slate-900/90 rounded-3xl border dark:border-white/8 border-black/7 shadow-sm shadow-slate-200/60 dark:shadow-none p-6 sm:p-8 md:p-9">
                 <span className="inline-block navy-grad-bg text-white text-xs font-bold px-3 py-1 rounded-full mb-4">Ongoing — 2025–2028</span>
-                <h3 className="text-xl sm:text-2xl font-bold dark:text-white text-slate-900 mb-3 leading-snug">
+                <h3 className="text-lg sm:text-xl md:text-2xl font-bold dark:text-white text-slate-900 mb-3 leading-snug">
                   Bachelor of Science in<br />Software Engineering
                 </h3>
                 <div className="flex items-center gap-1.5 dark:text-slate-400 text-slate-500 text-sm">
@@ -72,12 +72,12 @@ export default function Education() {
                 <div className="w-4 h-4 rounded-full tl-dot navy-grad-bg border-2 border-[#edf2f9] dark:border-[#0b1120]" />
               </div>
               <div className="hidden md:block" />
-              <div className="tl-right card-hover bg-white/95 dark:bg-slate-900/90 rounded-3xl border dark:border-white/8 border-black/7 shadow-sm shadow-slate-200/60 dark:shadow-none p-8 sm:p-9">
+              <div className="tl-right card-hover bg-white/95 dark:bg-slate-900/90 rounded-3xl border dark:border-white/8 border-black/7 shadow-sm shadow-slate-200/60 dark:shadow-none p-6 sm:p-8 md:p-9">
                 <div className="flex items-start justify-between gap-3 mb-4">
                   <span className="inline-block dark:bg-white/10 bg-slate-100 dark:text-slate-300 text-slate-700 text-xs font-bold px-3 py-1 rounded-full">Completed 2024</span>
                   <span className="shrink-0 navy-grad-bg text-white text-sm font-black px-3.5 py-1.5 rounded-xl">GPA 4.92</span>
                 </div>
-                <h3 className="text-xl sm:text-2xl font-bold dark:text-white text-slate-900 mb-3 leading-snug">
+                <h3 className="text-lg sm:text-xl md:text-2xl font-bold dark:text-white text-slate-900 mb-3 leading-snug">
                   Higher Secondary<br />Certificate (HSC)
                 </h3>
                 <div className="flex items-center gap-1.5 dark:text-slate-400 text-slate-500 text-sm mb-3">
@@ -100,12 +100,12 @@ export default function Education() {
                   style={{ background: 'linear-gradient(135deg,#3b5d96,#6d90c7)' }}
                 />
               </div>
-              <div className="tl-left card-hover bg-white/95 dark:bg-slate-900/90 rounded-3xl border dark:border-white/8 border-black/7 shadow-sm shadow-slate-200/60 dark:shadow-none p-8 sm:p-9">
+              <div className="tl-left card-hover bg-white/95 dark:bg-slate-900/90 rounded-3xl border dark:border-white/8 border-black/7 shadow-sm shadow-slate-200/60 dark:shadow-none p-6 sm:p-8 md:p-9">
                 <div className="flex items-start justify-between gap-3 mb-4">
                   <span className="inline-block dark:bg-white/10 bg-slate-100 dark:text-slate-300 text-slate-700 text-xs font-bold px-3 py-1 rounded-full">Completed 2022</span>
                   <span className="shrink-0 dark:bg-navy-700/30 bg-navy-50 dark:border-navy-400/30 border-navy-200 border text-navy-500 dark:text-navy-300 text-sm font-black px-3.5 py-1.5 rounded-xl">GPA 4.56</span>
                 </div>
-                <h3 className="text-xl sm:text-2xl font-bold dark:text-white text-slate-900 mb-3 leading-snug">
+                <h3 className="text-lg sm:text-xl md:text-2xl font-bold dark:text-white text-slate-900 mb-3 leading-snug">
                   Secondary School<br />Certificate (SSC)
                 </h3>
                 <div className="flex items-center gap-1.5 dark:text-slate-400 text-slate-500 text-sm mb-3">

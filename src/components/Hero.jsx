@@ -1,3 +1,5 @@
+import profileImg from '../assets/profile.png'
+
 const ITEMS = [
   'I am a Software Engineer & Problem Solver',
   'BSc in Software Engineering @ DIU',
@@ -7,11 +9,11 @@ const ITEMS = [
 
 function MarqueeGroup({ prefix }) {
   return (
-    <span className="inline-flex items-center whitespace-nowrap pr-12">
+    <span className="inline-flex items-center whitespace-nowrap pr-8 sm:pr-12">
       {ITEMS.map((item, i) => (
-        <span key={`${prefix}-${i}`} className="inline-flex items-center gap-4">
-          <span className="w-1.5 h-1.5 rounded-full navy-dot shrink-0 mx-2" />
-          <span className="text-lg sm:text-xl font-medium text-slate-500 dark:text-slate-400">{item}</span>
+        <span key={`${prefix}-${i}`} className="inline-flex items-center gap-3 sm:gap-4">
+          <span className="w-1.5 h-1.5 rounded-full navy-dot shrink-0 mx-1.5 sm:mx-2" />
+          <span className="text-base sm:text-lg lg:text-xl font-medium text-slate-500 dark:text-slate-400">{item}</span>
         </span>
       ))}
     </span>
@@ -20,19 +22,19 @@ function MarqueeGroup({ prefix }) {
 
 export default function Hero() {
   return (
-    <section id="home" className="shade-a scroll-mt-24 relative min-h-screen flex items-center pt-24 pb-16 overflow-hidden w-full">
+    <section id="home" className="shade-a scroll-mt-24 relative min-h-screen flex items-center pt-32 pb-16 sm:pt-36 lg:pt-40 overflow-hidden w-full">
       <div className="orb w-[420px] h-[420px] -top-28 -left-36" style={{ background: 'rgba(46,74,125,.1)' }} />
       <div className="orb w-72 h-72 bottom-0 -right-20" style={{ background: 'rgba(59,93,150,.07)', animationDelay: '3.5s' }} />
 
-      <div className="max-w-5xl mx-auto px-5 w-full grid md:grid-cols-2 gap-12 items-center">
+      <div className="max-w-5xl mx-auto px-5 w-full grid md:grid-cols-2 gap-10 md:gap-12 items-center">
 
-        <div className="space-y-6">
+        <div className="space-y-6 text-center md:text-left">
           <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full text-xs font-semibold bg-[rgba(46,74,125,.08)] border border-[rgba(46,74,125,.18)] text-navy-600 dark:text-navy-300 dark:bg-[rgba(137,168,216,.1)] dark:border-[rgba(137,168,216,.2)]">
             <span className="w-1.5 h-1.5 rounded-full bg-navy-600 dark:bg-navy-300 animate-pulse" />
             Available for opportunities
           </div>
 
-          <h1 className="text-5xl sm:text-6xl lg:text-7xl font-black leading-[1.07] tracking-tight dark:text-white text-slate-900">
+          <h1 className="text-4xl sm:text-6xl lg:text-7xl font-black leading-[1.1] sm:leading-[1.07] tracking-tight dark:text-white text-slate-900">
             Hello, I'm<br />
             <span className="navy-grad-text">Rifa Nanjiba</span>
           </h1>
@@ -44,7 +46,7 @@ export default function Hero() {
             </div>
           </div>
 
-          <div className="flex flex-wrap gap-3 pt-1">
+          <div className="flex flex-wrap justify-center md:justify-start gap-3 pt-1">
             <a
               href="https://github.com/nanjiba566"
               target="_blank"
@@ -62,8 +64,8 @@ export default function Hero() {
           </div>
         </div>
 
-        <div className="flex justify-center md:justify-end">
-          <div className="relative animate-float">
+        <div className="flex justify-center md:justify-end w-full">
+          <div className="relative animate-float w-64 h-64 sm:w-72 sm:h-72 lg:w-80 lg:h-80 mx-auto md:mx-0 mt-8 md:mt-0">
             <div
               className="absolute inset-0 rounded-3xl rotate-6 opacity-25 blur-sm scale-105 -z-10 pointer-events-none"
               style={{ background: 'linear-gradient(135deg,#2e4a7d,#3b5d96)' }}
@@ -72,11 +74,14 @@ export default function Hero() {
               className="absolute rounded-3xl pointer-events-none -z-10"
               style={{ inset: '-8px', transform: 'rotate(-3deg)', border: '2px solid rgba(46,74,125,.22)' }}
             />
-            <div className="w-64 h-64 sm:w-72 sm:h-72 rounded-3xl profile-glow overflow-hidden border-2 dark:border-white/10 border-black/8">
+            <div className="w-full h-full rounded-3xl profile-glow overflow-hidden border-2 dark:border-white/10 border-black/8 relative bg-slate-100 dark:bg-slate-800">
               <img
-                src="/profile.png"
-                className="w-full h-full object-cover"
+                src={profileImg}
+                onError={(e) => { e.currentTarget.src = '/profile.png' }}
+                className="w-full h-full object-cover rounded-3xl block"
                 alt="Rifa Nanjiba"
+                loading="eager"
+                decoding="async"
               />
             </div>
           </div>

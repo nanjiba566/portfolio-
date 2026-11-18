@@ -29,7 +29,7 @@ export default function Skills() {
 
         <div className="text-center mb-10 fade-in">
           <p className="text-navy-600 dark:text-navy-300 text-sm font-bold uppercase tracking-widest mb-3">What I Know</p>
-          <h2 className="text-4xl sm:text-5xl font-extrabold dark:text-white text-slate-900">
+          <h2 className="text-3xl sm:text-4xl md:text-5xl font-extrabold dark:text-white text-slate-900">
             My <span className="navy-grad-text">Skills</span>
           </h2>
           <span className="mt-4 block w-12 h-1 navy-grad-bg rounded-full mx-auto" />
