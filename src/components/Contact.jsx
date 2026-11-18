@@ -23,7 +23,7 @@ function MonoIcon({ children, href, label }) {
       target={href.startsWith('mailto') ? undefined : '_blank'}
       rel="noopener"
       aria-label={label}
-      className="w-9 h-9 rounded-xl flex items-center justify-center dark:bg-white/8 bg-slate-100 dark:text-white text-slate-800 dark:hover:bg-white/14 hover:bg-slate-200 transition-colors"
+      className="w-9 h-9 rounded-xl flex items-center justify-center bg-slate-100 text-slate-800 hover:bg-slate-200 border border-transparent dark:bg-slate-800 dark:text-slate-200 dark:border-slate-700 dark:hover:bg-slate-700 dark:hover:text-white transition-colors"
     >
       {children}
     </a>
