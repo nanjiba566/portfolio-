@@ -41,8 +41,8 @@ export default function About() {
             </div>
           </div>
 
-          <div className="border-t dark:border-white/8 border-black/7 px-7 sm:px-9 py-6 dark:bg-white/2 bg-slate-50/60">
-            <p className="text-xs font-bold uppercase tracking-widest dark:text-slate-500 text-slate-400 mb-5">Career Path</p>
+          <div className="border-t dark:border-slate-700/60 border-black/7 px-7 sm:px-9 py-6 dark:bg-slate-800/60 bg-slate-50/60">
+            <p className="text-xs font-bold uppercase tracking-widest dark:text-slate-400 text-slate-400 mb-5">Career Path</p>
             <div className="grid sm:grid-cols-3 gap-5">
               {[
                 { n: '1', title: 'Foundation', desc: 'Core CS, DSA, OOP & Software Engineering fundamentals.' },
@@ -53,7 +53,7 @@ export default function About() {
                   <div className="w-8 h-8 navy-grad-bg rounded-lg flex items-center justify-center shrink-0 text-white text-xs font-black">{step.n}</div>
                   <div>
                     <p className="text-xs font-bold dark:text-white text-slate-800 mb-1">{step.title}</p>
-                    <p className="text-xs dark:text-slate-400 text-slate-500 leading-relaxed">{step.desc}</p>
+                    <p className="text-xs dark:text-slate-300 text-slate-500 leading-relaxed">{step.desc}</p>
                   </div>
                 </div>
               ))}
